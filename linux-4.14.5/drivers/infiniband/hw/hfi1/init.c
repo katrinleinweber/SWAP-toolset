@@ -288,7 +288,7 @@ static int allocate_rcd_index(struct hfi1_devdata *dd,
 /**
  * hfi1_rcd_get_by_index
  * @dd: pointer to a valid devdata structure
- * @ctxt: the index of an possilbe rcd
+ * @ctxt: the index of an possible rcd
  *
  * We need to protect access to the rcd array.  If access is needed to
  * one or more index, get the protecting spinlock and then increment the
@@ -388,7 +388,7 @@ int hfi1_create_ctxtdata(struct hfi1_pportdata *ppd, int numa,
 		rcd->rcvhdrq_cnt = rcvhdrcnt;
 		rcd->rcvhdrqentsize = hfi1_hdrq_entsize;
 		/*
-		 * Simple Eager buffer allocation: we have already pre-allocated
+		 * Simple eager buffer allocation: we have already pre-allocated
 		 * the number of RcvArray entry groups. Each ctxtdata structure
 		 * holds the number of groups for that context.
 		 *
